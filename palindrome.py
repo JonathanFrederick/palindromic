@@ -18,18 +18,11 @@ def is_palindrome(sentence):
         return is_palindrome(sentence[1:-1])
     return False"""
 
-
-
 def main():
     # TODO: put your input/output code here
     sen = "No, sir, away. A papaya war is on!"#input("Please enter a sentence\n>>>")
     #print(re.sub(r'[^A-Za-z]', '', sen.lower()))
     print(is_palindrome(sen))
-
-
-
-    pass
-
 
 if __name__ == '__main__':
     main()
