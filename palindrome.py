@@ -4,11 +4,19 @@ import re
 def is_palindrome(sentence):
     # TODO: return True or False if the sentence is or isn't a palindrome
     sentence = re.sub(r'[^A-Za-z]', '', sentence.lower())
-    if len(sentence) <= 1:
+#looping version
+    for i in range(0,int(len(sentence)/2)):
+        if sentence[i] != sentence[len(sentence)-1-i]:
+            #print(i)
+            return False
+    return True
+
+#recursive version
+"""    if len(sentence) <= 1:
         return True
     elif sentence[0] == sentence[-1]:
         return is_palindrome(sentence[1:-1])
-    return False
+    return False"""
 
 
 
