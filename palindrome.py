@@ -7,6 +7,11 @@ def is_palindrome(sentence):
 
 def main():
     # TODO: put your input/output code here
+    sen = input("Please enter a sentence\n>>>")
+    print(is_palindrome(sen))
+
+
+
     pass
 
 
